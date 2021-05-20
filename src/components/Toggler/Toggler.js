@@ -13,6 +13,10 @@ const Titles = styled.p`
   font-size: 1.2rem;
   font-weight: 700;
   color: hsl(234, 14%, 74%);
+
+  @media (max-width: 280px) {
+    font-size: 1rem;
+  }
 `;
 
 const Toggler = (props) => {

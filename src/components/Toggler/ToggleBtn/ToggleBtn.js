@@ -34,6 +34,10 @@ const TOGGLE_BTN = styled.div`
   width: 4rem;
   display: flex;
   align-items: center;
+
+  @media (max-width: 280px) {
+    margin: 0 0.5rem;
+  }
 `;
 
 const Ball = styled.div`

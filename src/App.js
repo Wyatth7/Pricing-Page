@@ -33,6 +33,11 @@ const APP = styled.div`
   align-items: center;
   justify-content: center;
   background-color: hsl(240, 78%, 98%);
+  overflow: hidden;
+
+  @media (max-width: 770px) {
+    padding: 2rem 0;
+  }
 `;
 
 const MainContent = styled.div`
@@ -43,6 +48,10 @@ const MainHeader = styled.h1`
   text-align: center;
   font-size: 2.5rem;
   color: hsl(233, 13%, 49%);
+
+  @media (max-width: 280px) {
+    font-size: 2rem;
+  }
 `;
 
 function App() {

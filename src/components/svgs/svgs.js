@@ -5,6 +5,11 @@ const BOTTOM_SVG = styled.svg`
   position: absolute;
   bottom: 0;
   left: 0;
+
+  @media (max-width: 770px) {
+    bottom: -10%;
+    left: -45%;
+  }
 `;
 
 export const BottomSvg = (props) => {
@@ -23,6 +28,11 @@ const TOP_SVG = styled.svg`
   position: absolute;
   top: 0;
   right: 0;
+
+  @media (max-width: 770px) {
+    top: -20%;
+    right: -45%;
+  }
 `;
 export const TopSvg = (props) => {
   return (

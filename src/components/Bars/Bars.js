@@ -5,6 +5,11 @@ const BARS = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media (max-width: 770px) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 `;
 
 const SubBar = styled.div`
@@ -18,6 +23,27 @@ const SubBar = styled.div`
   background-color: #ffffff;
   border: 1px solid #ffffff;
   box-shadow: 0 0 10px #f0f0f0;
+
+  @media (max-width: 1190px) {
+    width: 18rem;
+  }
+
+  @media (max-width: 930px) {
+    width: 15rem;
+  }
+
+  @media (max-width: 770px) {
+    width: 22rem;
+    border-radius: 10px;
+  }
+
+  @media (max-width: 390px) {
+    width: 18rem;
+  }
+
+  @media (max-width: 310px) {
+    width: 15rem;
+  }
 
   ${(props) =>
     props.left
@@ -38,6 +64,10 @@ const PrimaryBar = styled(SubBar)`
   border: none;
   border-radius: 10px;
   height: 100%;
+
+  @media (max-width: 770px) {
+    margin: 1.5rem 0;
+  }
 `;
 
 const Title = styled.p`
@@ -54,6 +84,18 @@ const Price = styled.h1`
   justify-content: center;
   align-items: center;
   padding: 1rem 0;
+
+  @media (max-width: 1190px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 770px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 310px) {
+    font-size: 3rem;
+  }
 
   span {
     font-size: 2.5rem;
